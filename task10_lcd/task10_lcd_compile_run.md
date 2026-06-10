@@ -26,10 +26,10 @@ i2cdetect -y 1
 
 ## 2. コンパイル
 
-`lcd_task10.c`があるディレクトリで以下を実行する。
+`task10_lcd.c`があるディレクトリで以下を実行する。
 
 ```bash
-gcc -Wall -std=c90 -pedantic-errors -pthread -o lcd_task10 lcd_task10.c -lpigpiod_if2 -lrt
+gcc -Wall -std=c90 -pedantic-errors -pthread -o task10_lcd task10_lcd.c -lpigpiod_if2 -lrt
 ```
 
 ---
@@ -37,7 +37,7 @@ gcc -Wall -std=c90 -pedantic-errors -pthread -o lcd_task10 lcd_task10.c -lpigpio
 ## 3. 実行
 
 ```bash
-./lcd_task10
+./task10_lcd
 ```
 
 LCDの1行目に`LUO`、2行目に`KAIQUN`が表示され、5秒後に表示が消える。
@@ -80,5 +80,5 @@ git pull
 例：
 
 ```bash
-gcc -Wall -std=c90 -pedantic-errors -pthread -I../include -o lcd_task10 lcd_task10.c -lpigpiod_if2 -lrt
+gcc -Wall -std=c90 -pedantic-errors -pthread -I../include -o task10_lcd task10_lcd.c -lpigpiod_if2 -lrt
 ```

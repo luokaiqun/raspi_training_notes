@@ -1,0 +1,12 @@
+# ビルド成果物
+*.o
+*.out
+*.elf
+
+# 課題10 実行ファイル
+task10_lcd/task10_lcd
+
+# エディタ・OS 生成物
+*.swp
+*~
+.DS_Store
